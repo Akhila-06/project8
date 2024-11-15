@@ -1,0 +1,9 @@
+[BITS 32]
+global _start
+
+
+_start:
+    extern kernel_main
+    call kernel_main        ; Call the main function in C
+    cli
+    hlt            ; Infinite loop to halt
